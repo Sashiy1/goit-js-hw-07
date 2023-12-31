@@ -27,13 +27,16 @@ const images = [
 
 const imagesContainer = document.querySelector(".gallery");
 
+
+
 const createMarkup = ({ url, alt }) =>
   `<li>
 <img
+class="pictureItem"
+width="360"
+height="300"
 src="${url}"
 alt="${alt}"
-width: 360;
-height: 300;
 >
 </li>`;
 

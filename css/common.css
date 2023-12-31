@@ -13,11 +13,18 @@ body {
   line-height: 1.5;
 }
 
-img {
-  width: 360px;
-  height: 300px;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-gallery {
-  flex: ;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pictureItem {
+  margin-right: 24px;
+  margin-bottom: 48px;
 }
