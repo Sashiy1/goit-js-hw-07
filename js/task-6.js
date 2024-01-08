@@ -4,5 +4,9 @@ function getRandomHexColor() {
     .padStart(6, '0')}`;
 }
 
-const input = document.querySelector('.buttons-input')
-console.log(input)
+const input = document.querySelector('input')
+const boxes = document.querySelector('#boxes')
+const buttons = document.querySelectorAll('button')
+
+
+console.log(buttons)
