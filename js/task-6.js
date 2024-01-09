@@ -31,7 +31,7 @@ function createBoxes(amount) {
     let size = 30;
 
     for (let i = 0; i < amount; i += 1) {
-      size += 10;
+      
       const color = getRandomHexColor();
       const newBox = `<div 
       style= "width: ${size}px;
@@ -39,11 +39,14 @@ function createBoxes(amount) {
       background-color: ${color};">
       </div>`;
       boxArray.push(newBox);
+
+    size += 10;
+
     }
-    boxes.innerHTML = boxArray.join();
+    boxes.innerHTML = boxArray.join('');
   }
 }
 
 function destroyBoxes() {
-  return (boxes.innerHTML = "");
+  return boxes.innerHTML = "";
 }
